@@ -33,6 +33,39 @@ export default ImgSlider
 const Carousel = styled(Slider) `
     margin-top: 20px;
     
+    .slick-dots {
+        bottom: 20px;
+        display: block;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        right: 20px;
+        text-align: right;
+        width: 100%;
+        pointer-events: none;
+    }
+
+    .slick-arrow {
+        height: 100%;
+        width: calc(3.5vw + 24px);
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.2s ease 0s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .slick-next {
+        right: calc(-4vw);
+    }
+
+    .slick-prev {
+        left: calc(-4vw);
+    }
+
     button {
         z-index: 1;
     }
