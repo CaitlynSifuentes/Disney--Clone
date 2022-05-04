@@ -98,7 +98,7 @@ const Wrap = styled.div `
         rgb(0 0 0 / 73%) 0px 16px 10px -10px;
         transition: outline 130ms linear 0s;
 
-        &:hover {
+        &:hover::after{
             outline: 4px solid rgba(249, 249, 249, 0.8);
         }
     }

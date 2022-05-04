@@ -1,15 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
 import ImgSlider from './ImgSlider'
+import MoviesSlider from './movieRecs/MoviesSlider'
 import Viewers from './Viewers'
 
 function Home() {
+  const MovieBarOne = {title: "Recomended for You",
+                        images: {
+                          img1: "/images/incredibles2.jfif",
+                        }};
+
   return (
     <Container>
       <ImgSlider />
 
       <Viewers />
 
+      <MoviesSlider title={MovieBarOne.title} image = {MovieBarOne.images} />
     </Container>
   )
 }

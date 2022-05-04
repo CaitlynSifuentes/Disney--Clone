@@ -59,6 +59,7 @@ export default Viewers
 // Styled Components
 const Container = styled.div `
     margin-top: 30px;
+    margin-bottom: 30px;
     display: grid;
     grid-gap: 25px;
     grid-template-columns: repeat(5, minmax(0, 1fr));
